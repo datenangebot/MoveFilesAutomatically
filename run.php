@@ -15,6 +15,10 @@ $verbose = false;
 $interactive = true;
 $excludeHidden = true;
 foreach ($argv as $param) {
+	if($param === '--help') {
+		$output = shell_exec("cat ./readme.md");
+		exit($output."\n\n");
+	}
     if($param === '--dry' || $param === '-d') {
         $dryRun = true;
         echo "\n🔧 option dry run set";

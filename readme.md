@@ -8,6 +8,8 @@ Just run `run.php`. It will ask you for all findings and if the file should be m
 
 **There are some options:**
 
+`--help` will show this help.
+
 `--dry` or short `-d` will show you all planned moves, but will do nothing.
 
 `--verbose` or short `-v` will show you much information.
